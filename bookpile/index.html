@@ -16,7 +16,7 @@
             <div id="header">
                 <h1>Bookpile</h1>
                 <pre>
-                    All the books on the bookcase in the <a href="/library">Library</a>
+                    All the books on the bookcase in the <a href="../">Library</a>
                 </pre>
             </div>
             <div id="bookcase">
@@ -41,7 +41,7 @@
             `;
             
             let bookcase = document.getElementById('bookcase');
-            fetch('/library/links.json')
+            fetch('../links.json')
             .then(res=>res.json())
             .then(data=>{
                 let _shelf = '';
@@ -58,7 +58,7 @@
                     
                     console.log(book)
                     if(!cover) {
-                        cover = '/library/404cover.bmp';
+                        cover = '../404cover.bmp';
                     }
 
                     let __book = _book.replace('{0}', cover).replace('{1}', title).replace('{2}', author).replace('{3}', link);
