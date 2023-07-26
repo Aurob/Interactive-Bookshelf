@@ -5,6 +5,8 @@ Each book has a clickable polygon around the spine that opens a preview of the b
 
 [Demo](https://aurob.github.io/Interactive-Bookshelf)
 
+![Demonstration of the Interactive Bookshelf](https://aurob.github.io/Interactive-Bookshelf/demo.gif)
+
 - `annotations.json`: Annotations file created using [RoboFlow](https://universe.roboflow.com/rob-w2ifb/books-hoyen).
 - `links.json`: Title, author, and links for book info and cover
 - `bookshelf.png`: Image taken on a Galaxy Note Ultra 20
