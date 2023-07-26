@@ -1,0 +1,68 @@
+<head>
+    <!-- https://universe.roboflow.com/rob-w2ifb/books-hoyen -->
+    <meta charset="utf-8">
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Library">
+    <meta name="author" content="rau">
+    <!-- Image meta -->
+    <meta property="og:image" content="https://misc.rau.lol/library/shelfsm.png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:title" content="Library">
+    <meta property="og:description" content="Interactive Bookshelf">
+    <meta property="og:url" content="https://rau.lol/library">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="rau.lol">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <span>
+                <img src="https://4.bp.blogspot.com/-ce7Mq8D2q3M/VnEytZOL6DI/AAAAAAAA1vQ/psQDGfs3Pqk/s400/school_toshokan_hondana.png"
+                    width="100px" />
+            </span>
+            <span>
+                This is my actual bookshelf as of 2023-07-26
+                <br>Each book was annotated with <a href="https://universe.roboflow.com/rob-w2ifb/books-hoyen"
+                    target="_blank">Roboflow</a>
+                <br>Click on any book to get a link to the book on <a href="https://openlibrary.org/"
+                    target="_blank">OpenLibrary</a>, and in some cases <a
+                    href="https://www.goodreads.com/">Goodreads</a>
+                <br>View all the book links <a href="bookpile">here</a>
+            </span>
+        </div>
+        <div id="books">
+            <canvas id="bookshelf" width="1000" height="1000"></canvas>
+            <canvas id="annotations" width="1000" height="1000"></canvas>
+            <div id="bookmodal" class="modal">
+
+                <div class="modal-content">
+                    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px"
+                        viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                        <path opacity="0.2" fill="#777"
+                            d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                            s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                            c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z" />
+                        <path fill="#444" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                                             C22.32,8.481,24.301,9.057,26.013,10.047z">
+                            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20"
+                                to="360 20 20" dur="0.5s" repeatCount="indefinite" />
+                        </path>
+                    </svg>
+                    <a href="" target="_blank"><img src="" /></a>
+                    <div id="minfo">
+                        <h5>
+                            Click on the image to read about the book
+                            <br>Click outside to close the modal
+                        </h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</body>
+<script src="shelf.js"></script>
